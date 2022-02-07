@@ -11,6 +11,7 @@ ctx.strokeStyle = "#2c2c2c";
 ctx.lineWidth = 2.5;
 
 let painting = false;
+let filling = false;
 
 function startPainting() {
   painting = true;
@@ -42,6 +43,16 @@ function handleRangeChange(event) {
   ctx.lineWidth = size;
 }
 
+function handelModeClick() {
+  if (filling === true) {
+    filling = false;
+    mode.innerText = "Fill";
+  } else {
+    filling = true;
+    mode.innerText = "Paint";
+  }
+}
+
 if (canvas) {
   canvas.addEventListener("mousemove", onMouseMove);
   canvas.addEventListener("mousedown", startPainting);
@@ -53,4 +64,10 @@ Array.from(colors).forEach((color) =>
   color.addEventListener("click", handleColorClick)
 );
 
-range.addEventListener("input", handleRangeChange);
+if (range) {
+  range.addEventListener("input", handleRangeChange);
+}
+
+if (mode) {
+  mode.addEventListener("click", handelModeClick);
+}
