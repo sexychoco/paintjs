@@ -10,7 +10,7 @@ VanillaJS를 활용하여 그림판을 만들어보았습니다. HTML element �
 * 붓으로 그림 그리기 (paint)
 * 최종 파일 png 이미지로 저장 (save)
 
- 
+![paint](https://user-images.githubusercontent.com/95459711/160237806-cd5036da-1664-47fc-825f-ac061d214695.jpg)
   
 ### References
 [brush-size](https://www.w3schools.com/tags/att_input_type_range.asp)
