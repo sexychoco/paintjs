@@ -17,4 +17,5 @@ https://sexychoco.github.io/paintjs/
   
 ### References
 [brush-size](https://www.w3schools.com/tags/att_input_type_range.asp)
+  
 [Web/API/CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D)
